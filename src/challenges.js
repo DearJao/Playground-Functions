@@ -21,21 +21,31 @@ function splitSentence (texto) {
 let textoSeparado = texto.split(" ");
 
 return textoSeparado
-
-
 }
 
 
 // Desafio 4
-function concatName() {
+function concatName(paran) {
   // seu código aqui
 
+  let lastPositions = paran[paran.lenght[-1]];
+  let firstPositions = paran[paran.lenght[0]];
+
+  let concatStrings = lastPositions.concat(firstPositions);
+
+  return concatStrings;
+
 }
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  let team;
+  
+let teamWins = wins * 3;
+let teamTies = ties * 1;
+
+return teamWins + teamTies;
 }
 
 // Desafio 6
