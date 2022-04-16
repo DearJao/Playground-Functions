@@ -49,9 +49,24 @@ return teamWins + teamTies;
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(array) {
   // seu código aqui
+  let maiorNumeroAteAgora = array[0];
+    for(let i = 0; i <= array.length; i += 1) {
+      if(array[i] > maiorNumeroAteAgora) {
+        maiorNumeroAteAgora = array[i];
+        }
+    }
+  
+  let result = 0;
+    for (let index = 0; index < array.length; index += 1) {
+      if (array[index] === maiorNumeroAteAgora) {
+        result +=1; 
+        } 
+    }
+return result;
 }
+
 
 // Desafio 7
 function catAndMouse() {
