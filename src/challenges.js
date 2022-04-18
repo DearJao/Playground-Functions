@@ -21,21 +21,22 @@ function splitSentence (texto) {
 let textoSeparado = texto.split(" ");
 
 return textoSeparado
-}
+} 
 
 
 // Desafio 4
 function concatName(paran) {
   // seu código aqui
 
-  let lastPositions = paran[paran.lenght[-1]];
-  let firstPositions = paran[paran.lenght[0]];
+  let lastStrings = paran[paran.lenght[-1]];
+  let firstString = paran[paran.lenght[0]];
 
-  let concatStrings = lastPositions.concat(firstPositions);
+  let concatStrings = lastStrings.concat(firstString);
 
   return concatStrings;
 
 }
+//npm test concatName
 
 
 // Desafio 5
@@ -71,18 +72,17 @@ return result;
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  
-let x = Math.abs(4 - 2);
 
-  if (cat1 - mouse < cat2 - mouse) {
+  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
     return "cat1";
-  } else if (cat2 - mouse < cat1 - mouse) {
+  } else if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
     return "cat2";
-  } else if (mouse - cat1 + x === mouse - cat2) {
-    return "Os gatos trombam e o rato foge";
+  } else if ( Math.abs(mouse - cat1) === Math.abs(mouse - cat2)) {
+    return "os gatos trombam e o rato foge";
   }
 }
 //npm test catAndMouse
+
 
 
 // Desafio 8
@@ -90,36 +90,55 @@ function fizzBuzz(numbers) {
 // seu código aqui
 let result = [];
 
-for (let index = 0; index < numbers.length; index += 1) {
-  if (numbers [index] % 3 === 0 && numbers [index] % 5 === 0) {
-  result.push('fizzBuzz'); 
-  } else if (numbers [index] % 3 === 0) {
-    result.push('fizz');
-  } else if (numbers [index] % 5 === 0) {
-    result.push('buzz'); 
-  } else {
-    result.push('bug!');
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers [index] % 3 === 0 && numbers [index] % 5 === 0) {
+    result.push('fizzBuzz'); 
+    } else if (numbers [index] % 3 === 0) {
+      result.push('fizz');
+    } else if (numbers [index] % 5 === 0) {
+      result.push('buzz'); 
+    } else {
+      result.push('bug!');
+    }
   }
-}
 return result;
 }
 //npm test fizzBuzz
 
 
 // Desafio 9
-function encode() {
+function encode(str1) {
   // seu código aqui
 
+  let a = 1;
+  let e = 2;
+  let i = 3;
+  let o = 4;
+  let u = 5;
+
+
+  for(let index = 0; index < str1.lenght; index += 1)
+  if (str1[index]) {
+
+  }
 }
 
-function decode() {
+function decode(str2) {
   // seu código aqui
 
+  for(let i = 0; index < paranStr.lenght; i += 1)
+  if (str2[i] === 1 ) {
+    return "a"
+  }
 }
+
+
+
 
 // Desafio 10
 function techList() {
   // seu código aqui
+
 }
 
 module.exports = {
