@@ -62,28 +62,59 @@ function highestCount(array) {
     for (let index = 0; index < array.length; index += 1) {
       if (array[index] === maiorNumeroAteAgora) {
         result +=1; 
-        } 
+      } 
     }
 return result;
 }
 
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  
+let x = Math.abs(4 - 2);
+
+  if (cat1 - mouse < cat2 - mouse) {
+    return "cat1";
+  } else if (cat2 - mouse < cat1 - mouse) {
+    return "cat2";
+  } else if (mouse - cat1 + x === mouse - cat2) {
+    return "Os gatos trombam e o rato foge";
+  }
 }
+//npm test catAndMouse
+
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+// seu código aqui
+let result = [];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers [index] % 3 === 0 && numbers [index] % 5 === 0) {
+  result.push('fizzBuzz'); 
+  } else if (numbers [index] % 3 === 0) {
+    result.push('fizz');
+  } else if (numbers [index] % 5 === 0) {
+    result.push('buzz'); 
+  } else {
+    result.push('bug!');
+  }
 }
+return result;
+}
+//npm test fizzBuzz
+
 
 // Desafio 9
 function encode() {
   // seu código aqui
+
 }
+
 function decode() {
   // seu código aqui
+
 }
 
 // Desafio 10
