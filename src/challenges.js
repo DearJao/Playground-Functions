@@ -28,14 +28,16 @@ return textoSeparado
 function concatName(paran) {
   // seu código aqui
 
-  let lastStrings = paran[paran.lenght[-1]];
-  let firstString = paran[paran.lenght[0]];
+  let lastStrings = paran[paran.length -1];
+  let firstString = paran[0];
+  ///console.log(lastStrings, firstString)
 
-  let concatStrings = lastStrings.concat(firstString);
+  let concatStrings = lastStrings.concat(', ' + firstString);
 
   return concatStrings;
 
 }
+//console.log(concatName(['foguete','nao','tem', 're']))
 //npm test concatName
 
 
